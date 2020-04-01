@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PeterAnswers</string>
+    <string name="petition_text_view">Enter your petition:</string>
+    <string name="question_text_view">Enter your question:</string>
+    <string name="question">What can I answer for you?</string>
+    <string name="petition">You must enter the petition</string>
+    <string name="title_text_view">Peter Answers</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Night / Dark mode theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">@color/backgroundcolor</item>
+        <item name="tintcolor">@color/tintcolor</item>
+        <item name="textcolor">@color/textcolor</item>
+        <item name="buttoncolor">@color/buttoncolor</item>
+
+    </style>
+
+</resources>
