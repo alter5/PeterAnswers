@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var helpButton: Button
 
     private lateinit var petition: String // "Peter, please answer the following"
-    private lateinit var petition_input: String // "Peter, ple
+    private lateinit var petition_input: String // "Peter, ple"
     private var secretMode: Boolean = false // User may press "." on their keyboard to enter secret mode
     private lateinit var secretAnswer: String // Secretly entered answer to be displayed
     private var inputLengthReq = 1 // Prevents editTextPetition.doAfterTextChanged method from entering infinite loop
@@ -121,12 +121,26 @@ class MainActivity : AppCompatActivity() {
 
     private fun showAnswer() {
         // Shows answer, and set answerToggle to false
+        var input = editTextPetition.text.toString()
         var answer: String
+
         if (secretMode){
             answer = secretAnswer
-        } else {
+        } else  if (input == petition){
             answer = getString(R.string.answer_1)
+        } else {
+            answer = getString(R.string.invalid_petition)
+
+            answer_text_view.resetLoader()
+            answer_text_view.text = answer
+
+            Log.d("VerifyAnswer", "Petition: $petition, Input: $input") // TODO: Delete
+
+            // Allow user to make corrections
+            return
         }
+
+        Log.d("VerifyAnswer", "Petition: $petition, Input: $input") // TODO: Delete
 
         // Delete edit texts
         editTextPetition.setText("")
@@ -137,9 +151,7 @@ class MainActivity : AppCompatActivity() {
         answer_text_view.text = answer
 
         // Reset secret mode attributes
-        secretMode = false
-        secretAnswer = ""
-        inputLengthReq = 1
+        resetFields()
     }
 
     private fun openHelpDialog() {
@@ -149,5 +161,11 @@ class MainActivity : AppCompatActivity() {
         dBuilder.setPositiveButton("OK"
         ) { dialog, _ -> dialog.dismiss() }
         dBuilder.show()
+    }
+
+    private fun resetFields(){
+        secretMode = false
+        secretAnswer = ""
+        inputLengthReq = 1
     }
 }

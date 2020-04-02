@@ -13,4 +13,5 @@
     <string name="petition_string">Peter, please answer the following</string>
     <string name="answer_1">Enter generic answer here</string>
     <string name="answer_text_view">Answer: </string>
+    <string name="invalid_petition">Your petition is invalid.</string>
 </resources>
