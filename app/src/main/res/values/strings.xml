@@ -1,8 +1,16 @@
 <resources>
-    <string name="app_name">PeterAnswers</string>
+    <string name="app_name">Peter Answers</string>
     <string name="petition_text_view">Enter your petition:</string>
     <string name="question_text_view">Enter your question:</string>
     <string name="question">What can I answer for you?</string>
     <string name="petition">You must enter the petition</string>
     <string name="title_text_view">Peter Answers</string>
+    <string name="send_button">send</string>
+    <string name="title_sub_text_view">Virtual Tarot</string>
+    <string name="help_dialog_title">How to create a petition?</string>
+    <string name="help_dialog_text">The formula for writing a petition is:\n<b>Peter, please answer the following</b>\n\nOr, simply enter:\n<b>Peter, please answer</b></string>
+    <string name="help_button">Help</string>
+    <string name="petition_string">Peter, please answer the following</string>
+    <string name="answer_1">Enter generic answer here</string>
+    <string name="answer_text_view">Answer: </string>
 </resources>

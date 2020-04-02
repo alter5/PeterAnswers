@@ -11,6 +11,8 @@
         <item name="tintcolor">@color/tintcolor</item>
         <item name="textcolor">@color/textcolor</item>
         <item name="buttoncolor">@color/buttoncolor</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@null</item>
 
     </style>
 
