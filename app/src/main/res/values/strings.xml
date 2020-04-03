@@ -12,6 +12,8 @@
     <string name="help_button">Help</string>
     <string name="petition_string">Peter, please answer the following</string>
     <string name="answer_1">Enter generic answer here</string>
-    <string name="answer_text_view">Answer: </string>
+    <string name="answer_text_view">Peter: </string>
     <string name="invalid_petition">Your petition is invalid.</string>
+    <string name="quote_text_view">We are not permitted to choose the frame of our destiny. But what we put into it is ours.</string>
+    <string name="quote_author_text_view">\n<i>Dag Hammarskjöld</i></string>
 </resources>

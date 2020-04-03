@@ -11,18 +11,20 @@
         android:id="@+id/title_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/carrois_gothic_sc"
         android:text="@string/title_text_view"
         android:textColor="@color/tintcolor"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,20 +79,24 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="32dp"
         android:text="@string/send_button"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_text_view" />
 
     <com.elyeproj.loaderviewlibrary.LoaderTextView
         android:id="@+id/answer_text_view"
-        android:layout_width="290dp"
+        android:layout_width="285dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/carrois_gothic_sc"
         android:textColor="@color/textcolor"
+        android:textSize="18sp"
+
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -98,6 +104,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/carrois_gothic_sc"
         android:text="@string/title_sub_text_view"
         android:textColor="@color/tintcolor"
         android:textSize="24sp"
@@ -110,20 +117,45 @@
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/help_button"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/carrois_gothic_sc"
         android:text="@string/answer_text_view"
         android:textColor="@color/textcolor"
+        android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/answer_text_view"
         app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/quote_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/carrois_gothic_sc"
+        android:text="@string/quote_text_view"
+        android:textColor="@color/textcolor"
+        app:layout_constraintBottom_toTopOf="@+id/button_help"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/quote_author_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carrois_gothic_sc"
+        android:text="@string/quote_author_text_view"
+        android:textColor="@color/textcolor"
+        app:layout_constraintStart_toStartOf="@+id/quote_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/quote_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

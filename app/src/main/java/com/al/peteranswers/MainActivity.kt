@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
 
         petition = getString(R.string.petition_string)
         secretAnswer = ""
-        answer_text_view.text = " "
 
         // Disable keyboard suggestions
         editTextPetition.inputType = InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
